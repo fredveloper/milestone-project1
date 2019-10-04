@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Jura:100,200,300,400,500,600,700|Oswald:100,200,300,400,500,600,700&display=swap');
 
-/* ---------------------------------------Header */
+/*--------------Text--------------*/
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-text {
+    font-family: "Jura", sans-serif;
+    font-size: 15px;
+    font-weight:normal;
+}
+
+.general-sub {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #98CE00;
+}
+
+/*--------------Header--------------*/
 
 .navbar {
     margin-bottom: 0;
@@ -41,6 +58,55 @@
 
 .nav-item > a:hover {
   color: #98CE00!important;
+}
+
+/*--------------Footer--------------*/
+
+footer {
+    background-color: #343a40;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.general-sub {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list-unstyled li a{
+    color: #fff;
+    height: 120px;
+    text-decoration: none;
+}
+
+.list-unstyled li a:hover{
+    color: #98CE00;
+}
+
+.opening-hours .days {
+    float: left;
+    margin-right: 20px;
+}
+
+.social-links li a i {
+    width: 40px;
+    height: 40px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #98CE00;
 }
 
 
