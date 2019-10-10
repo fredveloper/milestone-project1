@@ -21,7 +21,7 @@
 /*--------------Header--------------*/
 
 .logo {
-    
+   width: 195px;
 }
 
 .navbar {
@@ -33,25 +33,27 @@
 }
 
 .navbar .navbar-toggler {
-    border: 0;
+    margin: 0!important;
+    padding: 0!important;
 }
 
 .navbar-brand{
     margin-left: 10px;
-    margin-right: 50px;
+    margin-right: 10px;
+    padding: 0;
 }
 
 .nav-item{
     text-align: center;
     padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .nav-item a{
     font-family: "Jura", sans-serif;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -90,7 +92,8 @@ footer {
 
 .opening-hours .days {
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
+    
 }
 
 .social-links li a i {
@@ -113,5 +116,40 @@ footer {
     background: #98CE00;
 }
 
+/*--------------Media Queries--------------*/
+@media only screen  and (max-width : 1200px) {
+    .nav-item {
+        margin-left: 8px;
+        margin-right: 8px;
+        
+    }
+}
 
+@media screen and (max-width: 992px) {
+     .nav-item {
+        
+        margin-left: 2px;
+        margin-right: 2px;
+        padding: 0;
+    }
+    .nav-item a {
+        font-size: 16px;
+    }
+}
 
+/*@media screen and (max-width: 576px){*/
+/*    .footer-item{*/
+/*        text-align: center;*/
+/*    }*/
+/*}*/
+/*.opening-hours .list-unstyled{*/
+/*    list-style: */
+/*}*/
+
+/*.opening-hours .days{*/
+/*    text-align: right;*/
+/*}*/
+
+/*.opening-hours .hours{*/
+/*    text-align: left;*/
+/*}*/
