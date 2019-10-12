@@ -1,6 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Jura:100,200,300,400,500,600,700|Oswald:100,200,300,400,500,600,700&display=swap');
 
-/*--------------Text--------------*/
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-block{
+    background-image: linear-gradient(to right bottom, #000000, #1e181d, #2d2a3a, #2d425a, #195c73, #007080, #008484, #00977f, #0da874, #3cb760, #68c441, #98ce00);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
+}
+
+.content-block .content{
+    padding: 100px 50px;
+}
+
+.content-divider {
+    padding: 25px 0;
+    height: 100px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    
+}
+
+/*----------Text-Buttons----------*/
 h1,
 h2,
 h3,
@@ -16,20 +47,51 @@ h6 {
 
 .general-text {
     font-family: "Jura", sans-serif;
-    font-size: 15px;
-    font-weight:normal;
+    color: #fff;
+    text-align: justify;
 }
 
-.general-sub {
+.general-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-text {
+    font-family: "Jura", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.footer-sub {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     color: #98CE00;
 }
 
+.btn {
+    font-family: "Oswald", sans-serif!important;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: #000;
+    color: #98CE00;
+    border-color: #000;
+}
+
+
 /*--------------Header--------------*/
 
 .logo {
-   width: 195px;
+    width: 195px;
 }
 
 .navbar {
@@ -37,7 +99,7 @@ h6 {
     width: 100%;
     background-color: #000!important;
     border: 0;
-    
+
 }
 
 .navbar .navbar-toggler {
@@ -45,33 +107,33 @@ h6 {
     padding: 0!important;
 }
 
-.navbar-brand{
+.navbar-brand {
     margin-left: 10px;
     margin-right: 10px;
     padding: 0;
 }
 
-.nav-item{
+.nav-item {
     text-align: center;
     padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.nav-item a{
+.nav-item a {
     font-family: "Jura", sans-serif;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 400;
 }
 
-.navbar-nav > .active > a {
-  color: #8fd400!important;
-      
+.navbar-nav>.active>a {
+    color: #8fd400!important;
+
 }
 
-.nav-item > a:hover {
-  color: #98CE00!important;
+.nav-item>a:hover {
+    color: #98CE00!important;
 }
 
 /*--------------Footer--------------*/
@@ -80,7 +142,7 @@ footer {
     background-color: #343a40;
     color: #fafafa;
     min-height: 120px;
-    margin: 0;
+    margin-top: auto;
 }
 
 .general-sub {
@@ -88,20 +150,20 @@ footer {
     margin-bottom: 20px;
 }
 
-.list-unstyled li a{
+.list-unstyled li a {
     color: #fff;
     height: 120px;
     text-decoration: none;
 }
 
-.list-unstyled li a:hover{
+.list-unstyled li a:hover {
     color: #98CE00;
 }
 
 .opening-hours .days {
     float: left;
     margin-right: 10px;
-    
+
 }
 
 .social-links li a i {
@@ -125,17 +187,18 @@ footer {
 }
 
 /*--------------Media Queries--------------*/
-@media only screen  and (max-width : 1200px) {
+
+@media only screen and (max-width: 1200px) {
     .nav-item {
         margin-left: 8px;
         margin-right: 8px;
-        
+
     }
 }
 
 @media screen and (max-width: 992px) {
-     .nav-item {
-        
+    .nav-item {
+
         margin-left: 2px;
         margin-right: 2px;
         padding: 0;
@@ -146,18 +209,42 @@ footer {
 }
 
 /*@media screen and (max-width: 576px){*/
+
 /*    .footer-item{*/
+
 /*        text-align: center;*/
+
 /*    }*/
+
 /*}*/
+
 /*.opening-hours .list-unstyled{*/
+
 /*    list-style: */
+
 /*}*/
 
 /*.opening-hours .days{*/
+
 /*    text-align: right;*/
+
 /*}*/
 
 /*.opening-hours .hours{*/
+
 /*    text-align: left;*/
+
 /*}*/
+
+
+@keyframes bganimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
