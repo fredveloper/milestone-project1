@@ -6,7 +6,7 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
+    padding-top: 40px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -19,12 +19,12 @@ body {
 }
 
 .content-block .content{
-    padding: 100px 50px;
+    padding: 95px 50px;
 }
 
 .content-divider {
-    padding: 25px 0;
-    height: 100px;
+    padding: 50px 0;
+    height: 150px;
     background-color: #000;
     text-align: center;
     color: #fff;
@@ -185,6 +185,40 @@ footer {
 .social-links li a i:hover {
     background: #98CE00;
 }
+
+/*--------------Memberships--------------*/
+
+.content-block .page-section {
+    padding: 20px 0;
+}
+
+.card {
+    border: 1px solid transparent;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.80), 0 6px 6px rgba(0,0,0,0.50);
+}
+
+.card:hover {
+    box-shadow: 0 10px 80px rgba(0,0,0,0.80), 0 10px 10px rgba(0,0,0,0.50);
+}
+
+.card-body {
+    
+    background: #000;
+    
+}
+
+.card h5 {
+    color: #98CE00;
+}
+
+.card-body .btn-primary {
+    background-color: #98CE00;
+    border-color: #000;
+    color: #000;
+}
+
+
+
 
 /*--------------Media Queries--------------*/
 
