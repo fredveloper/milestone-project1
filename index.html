@@ -15,7 +15,7 @@
 <body>
   <header>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top-custom">
       <a class="navbar-brand" href="#">
         <img class="logo" src="assets/images/logo.png" alt="logo">
       </a>
@@ -26,19 +26,19 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#welcome-section">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Memberships<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#memberships-section">Memberships<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Classes<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#classes-section">Classes<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Timetables<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Facilities<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#facilities-section">Facilities<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Join<span class="sr-only">(current)</span></a>
@@ -48,7 +48,9 @@
     </nav>
   </header>
 
-  <section>
+  <!--This is the Welcome section-->
+
+  <section id="welcome-section">
     <div class="container-fluid">
       <div class="row content-block">
         <div class="col-md-6 content">
@@ -76,21 +78,32 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
+  <section id="divider-welcome-section">
+    <div class="container-fluid">
       <div class="row content-divider">
         <div class="col-md-12">
           <h2>Start Your Path To Perfect Health</h2>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!--This is the Memberships section-->
+
+  <section id="memberships-section">
+    <div class="container-fluid">
       <div class="row content-block">
         <div class="col-md-12 page-section">
           <h1 class="general-title uppercase">Memberships</h1>
         </div>
+
         <div class="container">
           <div class="card-deck">
             <div class="card">
-              <img src="assets/images/membership1.png" class="card-img-top" alt="...">
+              <img src="assets/images/membership1.png" class="card-img-top" alt="Membership1">
               <div class="card-body">
                 <h5 class="card-title text-center">Membership Includes</h5>
                 <ul class="general-text">
@@ -104,7 +117,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/membership2.png" class="card-img-top" alt="...">
+              <img src="assets/images/membership2.png" class="card-img-top" alt="Membership2">
               <div class="card-body">
                 <h5 class="card-title text-center">Membership Includes</h5>
                 <ul class="general-text">
@@ -118,7 +131,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="assets/images/membership3.png" class="card-img-top" alt="...">
+              <img src="assets/images/membership3.png" class="card-img-top" alt="Membership3">
               <div class="card-body">
                 <h5 class="card-title text-center">Membership Includes</h5>
                 <ul class="general-text">
@@ -134,79 +147,58 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
+  <section id="divider-memberships-section">
+    <div class="container-fluid">
       <div class="row content-divider">
         <div class="col-md-12">
           <h2>Get In. Get Fit. Get on with Life!</h2>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!--This is the Classes section-->
+
+  <section id="classes-section">
+    <div class="container-fluid">
       <div class="row content-block">
         <div class="col-md-12 page-section">
           <h1 class="general-title uppercase">Classes</h1>
         </div>
 
-        <!--<div class="row">-->
-          <div class="col-md-3">
-            <h5 class="general-title">Spinning</h5>
-            <p class="general-text">Spinning saddle up and experience the most enjoyable and effective workouts ever. Our spinning classes are ideal for people of all levels of fitness and experience, weather you are new to exercise or a regular gym junkie!</p>
+        <div class="container gym-class-wrap">
+          <div class="gym-class spinning-class">
+            <h2 class="general-text text-center">Spinning</h2>
+            <!--<p class="general-text">Spinning saddle up and experience the most enjoyable and effective workouts ever. Our spinning classes are ideal for people of all levels of fitness and experience, weather you are new to exercise or a regular gym junkie!</p>-->
           </div>
-
-          <div class="col-md-3 gym-class">
-            <img src="assets/images/home1.jpg">
+          <div class="gym-class trx-class">
+            <h2 class="general-text text-center">TRX</h2>
+            <!--<p class="general-text">This class will push you to new levels of strength using trx suspension training bands and your own body weight. TRX uses body weight exercises which develops strength, balance, flexibility and core stability simultaneously.</p>-->
           </div>
-
-          <div class="col-md-3">
-            <h5 class="general-title">TRX</h5>
-            <p class="general-text">This class will push you to new levels of strength using trx suspension training bands and your own body weight. TRX uses body weight exercises which develops strength, balance, flexibility and core stability simultaneously.</p>
+          <div class="gym-class bodypump-class">
+            <h2 class="general-text text-center">Bodypump</h2>
+            <!--<p class="general-text">Is one of the best ways to tone up and get in shape as it challenges all of your major muscle groups while you squat, press, lift and curl. This is a resistance based workout using bars & weights to burn calories even after you've left the-->
+            <!--  class!</p>-->
           </div>
-
-          <div class="col-md-3 gym-class">
-            <img src="assets/images/home1.jpg">
+          <div class="gym-class bootcamp-class">
+            <h2 class="general-text text-center">Bootcamp</h2>
+            <!--<p class="general-text">This circuit training based class is designed to challenge your body and mind in a fun environment, all the while building strength and fitness through a variety of exercise stations targeting fitness and individual body parts.</p>-->
           </div>
-          
-          <div class="col-md-3 gym-class">
-            <img src="assets/images/home1.jpg">
+          <div class="gym-class bums-tums-class">
+            <h2 class="general-text text-center">Bums & Tums</h2>
+            <!--<p class="general-text">You cannot beat this class for targeting those “hard to handle” body parts that need a little bit more attention! Tone and firm up your tummy, hips, thighs and bum with this brilliant workout dedicated to ‘bums n tums’!</p>-->
           </div>
-          
-          <div class="col-md-3">
-            <h5 class="general-title">Bodypump</h5>
-            <p class="general-text">Is one of the best ways to tone up and get in shape as it challenges all of your major muscle groups while you squat, press, lift and curl. This is a resistance based workout using bars & weights to burn calories even after you've left the class!</p>
+          <div class="gym-class pilates-class">
+            <h2 class="general-text text-center">Pilates</h2>
+            <!--<p class="general-text">This mat pilates class works to balance all muscle groups' strength and flexibility, with an emphasis on challenging the core muscles with each movement. Mat pilates is a challenging yet safe method to sculpt your body and to feel increased-->
+            <!--  agility in your every day movements.</p>-->
           </div>
-
-          <div class="col-md-3 gym-class">
-            <img src="assets/images/home1.jpg">
-          </div>
-
-          <div class="col-md-3">
-            <h5 class="general-title">Bootcamp</h5>
-            <p class="general-text">This circuit training based class is designed to challenge your body and mind in a fun environment, all the while building strength and fitness through a variety of exercise stations targeting fitness and individual body parts.</p>
-          </div>
-          
-          <div class="col-md-3">
-            <h5 class="general-title">Bums & Tums </h5>
-            <p class="general-text">You cannot beat this class for targeting those “hard to handle” body parts that need a little bit more attention! Tone and firm up your tummy, hips, thighs and bum with this brilliant workout dedicated to ‘bums n tums’!</p>
-          </div>
-
-          <div class="col-md-3 gym-class">
-            <img src="assets/images/home1.jpg">
-          </div>
-
-          <div class="col-md-3">
-            <h5 class="general-title">Pilates</h5>
-            <p class="general-text">this mat pilates class works to balance all muscle groups' strength and flexibility, with an emphasis on challenging the core muscles with each movement. Mat pilates is a challenging yet safe method to sculpt your body and to feel increased agility in your every day movements.</p>
-          </div>
-
-          <div class="col-md-3 gym-class">
-            <img src="assets/images/home1.jpg">
-          </div>
-
-        <!--</div>-->
-      </div> 
-      
+        </div>
+      </div>
     </div>
-
-
   </section>
 
   <footer class="container-fluid">
