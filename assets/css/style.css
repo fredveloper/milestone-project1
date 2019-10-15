@@ -5,14 +5,6 @@ html {
     height: 100%;
 }
 
-/*body {*/
-/*    margin: 0;*/
-/*    padding-top: 60px;*/
-/*    min-height: 100%;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
-
 body {
     margin: 0;
 /*    padding-top: 40px;*/
@@ -42,8 +34,8 @@ body {
 }
 
 .content-divider {
-    padding: 50px 0;
-    height: 150px;
+    padding: 25px 0;
+    height: 100px;
     background-color: #000;
     text-align: center;
     color: #fff;
@@ -249,7 +241,7 @@ footer {
   flex-direction: row;
   width: 100%;
   height: 70vh;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   
 }
 
@@ -259,9 +251,28 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: none;
-  transition: flex 1.5s ease;
+  transition: flex .4s ease;
   box-shadow: 0 10px 20px rgba(0,0,0,0.80), 0 6px 6px rgba(0,0,0,0.50);
 }
+
+.gym-class .overlay {
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .1s ease-in-out;
+  transition-delay: .1s;
+  opacity:0;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.gym-class:hover .overlay {
+  opacity: 1;
+}
+
 
 .gym-class:hover{
     flex: 7;
@@ -291,11 +302,26 @@ footer {
   background-image: url("../images/pilates.jpg");
 }
 
+/*--------------RegisterForm--------------*/
 
+.form-wrap {
+    text-align: center;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
 
+.form-text{
+    color: #fff!important;
+    font-family: "Jura", sans-serif;
+}
 
+hr {
+    border-color: #fff;
+}
 
-/*--------------Media Queries--------------*/
+/*--------------MediaQueries--------------*/
 
 @media only screen and (max-width: 1200px) {
     .nav-item {
