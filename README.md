@@ -58,7 +58,7 @@ All images were collected from [Unsplash]( https://unsplash.com).
 The Islandbridge Fitness logo was created by me.
 
 ### Acknowledgements
-The gradient background animation was found through this tutorial [here]( https://www.youtube.com/watch?v=NnrBempao2M).
+The gradient background animation was found through this tutorial [here]( https://www.youtube.com/watch?v=NnrBempao2M). The colours were customised to meet the design needs.
 
 The registration form layout was found [here](https://mdbootstrap.com/docs/jquery/forms/basic/) an it was customised by me to meet the design needs.
 
