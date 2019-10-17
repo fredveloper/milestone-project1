@@ -45,8 +45,6 @@ All links were manually tested to guarantee they are pointing to the correct des
 ## Deployment
 The website is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. For the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
-To run locally, the repository can be cloned directly into the editor of your choice by pasting ‘git clone https://github.com/fredveloper/milestone-project1.git’ into your terminal.
-
 ## Credits
 
 ### Content
