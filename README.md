@@ -6,6 +6,8 @@ This is my first Milestone Project for Code Institute. It is a website created t
 ## Demo
 A live demo can be found [here](https://fredveloper.github.io/milestone-project1/).
 
+Github repository: https://github.com/fredveloper/milestone-project1/
+
 ## UX
 My goal in the design was to reflect the gym’s relevant information for potential and existing customers through a modern, dynamic, responsive and user-friendly web design. The website consists of a scroll-down page, divided into 6 sections (Home, Memberships, Classes, Facilities, Timetables and Join) where the user can easily navigate and find clear details about the gym.
 
