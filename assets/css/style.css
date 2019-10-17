@@ -7,7 +7,6 @@ html {
 
 body {
     margin: 0;
-/*    padding-top: 40px;*/
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -23,25 +22,26 @@ body {
     margin-top: 3em;
 }
 
-.content-block{
+.content-block {
     background-image: linear-gradient(to right bottom, #000000, #1e181d, #2d2a3a, #2d425a, #195c73, #007080, #008484, #00977f, #0da874, #3cb760, #68c441, #98ce00);
     background-size: 400%;
     animation: bganimation 15s infinite;
 }
 
-.content-block .content{
+.content-block .content {
     padding: 95px 50px;
 }
 
 .content-divider {
-    padding: 25px 0;
-    height: 100px;
+    padding: 15px 0;
+    height: 75px;
     background-color: #000;
     text-align: center;
     color: #fff;
 }
 
-/*----------Text-Buttons----------*/
+/*----------Headings-Text-Buttons----------*/
+
 h1,
 h2,
 h3,
@@ -91,7 +91,11 @@ h6 {
     color: #fff;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
     background-color: #000;
     color: #98CE00;
     border-color: #000;
@@ -148,11 +152,12 @@ h6 {
 
 /*--------------Footer--------------*/
 
-footer {
+.footer-top {
     background-color: #343a40;
     color: #fafafa;
     min-height: 120px;
     margin-top: auto;
+    padding-top: 20px;
 }
 
 .general-sub {
@@ -209,11 +214,11 @@ footer {
 .card {
     color: #98CE00;
     border: 1px solid transparent;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.80), 0 6px 6px rgba(0,0,0,0.50);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.80), 0 6px 6px rgba(0, 0, 0, 0.50);
 }
 
 .card:hover {
-    box-shadow: 0 10px 35px rgba(0,0,0,0.80), 0 10px 10px rgba(0,0,0,0.50);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.80), 0 10px 10px rgba(0, 0, 0, 0.50);
 }
 
 .card-body {
@@ -227,79 +232,49 @@ footer {
     color: #fff;
 }
 
-.card-body .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+.card-body .btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
     background-color: #008080;
     color: #fff;
     border-color: #000;
 }
 
-/*----------Classes---------*/
+/*---------------Classes---------------*/
 
-
-.gym-class-wrap {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 70vh;
-  margin-bottom: 40px;
-  
+.carousel-center {
+    margin: 0 auto;
 }
 
-.gym-class {
-  flex: 1;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  transition: flex .4s ease;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.80), 0 6px 6px rgba(0,0,0,0.50);
+.carousel-center .carousel-inner {
+    color: #98CE00;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.80), 0 6px 6px rgba(0, 0, 0, 0.50);
+
 }
 
-.gym-class .overlay {
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .1s ease-in-out;
-  transition-delay: .1s;
-  opacity:0;
-  font-size: 15px;
-  padding: 10px;
-  text-align: center;
+.carousel-center h1 a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
 }
 
-.gym-class:hover .overlay {
-  opacity: 1;
+.carousel-center h1 a:hover {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    text-shadow: 2px 2px 5px #fff;
 }
 
-
-.gym-class:hover{
-    flex: 7;
-  }
-
-.spinning-class { 
-  background-image: url("../images/spinning.jpg");
-}
-
-.trx-class { 
-  background-image: url("../images/trx.jpeg");
-}
-
-.bodypump-class { 
-  background-image: url("../images/bodypump.jpg");
-}
-
-.bootcamp-class { 
-  background-image: url("../images/bootcamp.jpg");
-}
-
-.bums-tums-class { 
-  background-image: url("../images/bums-tums.jpg");
-}
-
-.pilates-class { 
-  background-image: url("../images/pilates.jpg");
+.carousel-inner .carousel-item .carousel-caption {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: auto;
 }
 
 /*--------------RegisterForm--------------*/
@@ -312,7 +287,7 @@ footer {
     margin-bottom: 40px;
 }
 
-.form-text{
+.form-text {
     color: #fff!important;
     font-family: "Jura", sans-serif;
 }
@@ -344,40 +319,10 @@ hr {
 }
 
 @media screen and (max-width: 1342px) and (min-width: 768px) {
-  #carouselSlides {
-    padding: 95px 50px;
-  }
+    #carouselSlides {
+        padding: 95px 50px;
+    }
 }
-
-
-/*@media screen and (max-width: 576px){*/
-
-/*    .footer-item{*/
-
-/*        text-align: center;*/
-
-/*    }*/
-
-/*}*/
-
-/*.opening-hours .list-unstyled{*/
-
-/*    list-style: */
-
-/*}*/
-
-/*.opening-hours .days{*/
-
-/*    text-align: right;*/
-
-/*}*/
-
-/*.opening-hours .hours{*/
-
-/*    text-align: left;*/
-
-/*}*/
-
 
 @keyframes bganimation {
     0% {
@@ -388,5 +333,11 @@ hr {
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content-divider {
+        display: none;
     }
 }

@@ -13,20 +13,22 @@
 </head>
 
 <body>
-  <header>
 
+  <!--This is the Header-->
+
+  <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top-custom">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img class="logo" src="assets/images/logo.png" alt="logo">
       </a>
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#welcome-section">Home<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#memberships-section">Memberships<span class="sr-only">(current)</span></a>
@@ -35,7 +37,7 @@
             <a class="nav-link" href="#classes-section">Classes<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Timetables<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="assets/timetables/timetables.pdf" target="_blank">Timetables<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#facilities-section">Facilities<span class="sr-only">(current)</span></a>
@@ -57,7 +59,7 @@
           <h1 class="uppercase general-title">Welcome to Islandbridge Fitness</h1><br>
           <h5 class="general-text">The most complete Gym in Dublin 8, with the best and most modern equipment for your training routine. We have unique sports and leisure facilities and qualified staff that will make your visit a pleasant experience.</h5>
           <br>
-          <button type="button" class="btn btn-primary btn-lg float-right">Join Now!</button>
+          <a href="#register-section" class="btn btn-primary float-right uppercase">Join Now</a>
         </div>
 
         <div class="col-md-6">
@@ -65,13 +67,13 @@
             <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-wrap="true">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="assets/images/home1.jpg" alt="First slide">
+                  <img class="d-block w-100" src="assets/images/home1.jpg" alt="Weight Lifting">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="assets/images/home2.jpg" alt="Second slide">
+                  <img class="d-block w-100" src="assets/images/home2.jpg" alt="Bodypump">
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="assets/images/home3.jpg" alt="Third slide">
+                  <img class="d-block w-100" src="assets/images/home3.jpg" alt="Swimming">
                 </div>
               </div>
             </div>
@@ -113,7 +115,7 @@
                 </ul>
               </div>
               <div class="card-body">
-                <a href="#" class="btn btn-primary float-right uppercase">Join Now</a>
+                <a href="#register-section" class="btn btn-primary float-right uppercase">Join Now</a>
               </div>
             </div>
             <div class="card">
@@ -127,7 +129,7 @@
                 </ul>
               </div>
               <div class="card-body">
-                <a href="#" class="btn btn-primary float-right uppercase">Join Now</a>
+                <a href="#register-section" class="btn btn-primary float-right uppercase">Join Now</a>
               </div>
             </div>
             <div class="card">
@@ -141,10 +143,11 @@
                 </ul>
               </div>
               <div class="card-body">
-                <a href="#" class="btn btn-primary float-right uppercase">Join Now</a>
+                <a href="#register-section" class="btn btn-primary float-right uppercase">Join Now</a>
               </div>
             </div>
           </div>
+          <br>
         </div>
       </div>
     </div>
@@ -169,38 +172,77 @@
           <h1 class="general-title uppercase">Classes</h1>
         </div>
 
-        <div class="container gym-class-wrap">
-          <div class="gym-class spinning-class">
-            <h2 class="general-text text-center">Spinning</h2>
-            <p class="general-text overlay">Spinning saddle up and experience the most enjoyable and effective workouts ever. Our spinning classes are ideal for people of all levels of fitness and experience, weather you are new to exercise or a regular gym junkie!</p>
+        <div class="col-md-6 carousel-center">
+          <div class="row">
+            <div id="carouselIndicators1" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators1" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators1" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators1" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators1" data-slide-to="3"></li>
+                <li data-target="#carouselIndicators1" data-slide-to="4"></li>
+                <li data-target="#carouselIndicators1" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="assets/images/spinning.jpg" alt="Spinning">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Spinning</h4>
+                    <p>Spinning saddle up and experience the most enjoyable and effective workouts ever. Our spinning classes are ideal for people of all levels of fitness and experience, weather you are new to exercise or a regular gym junkie!</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/trx.jpeg" alt="TRX">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>TRX</h4>
+                    <p>This class will push you to new levels of strength using trx suspension training bands and your own body weight. TRX uses body weight exercises which develops strength, balance, flexibility and core stability simultaneously.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/bodypump.jpg" alt="Bodypump">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Bodypump</h4>
+                    <p>Is one of the best ways to tone up and get in shape as it challenges all of your major muscle groups while you squat, press, lift and curl. This is a resistance based workout using bars & weights to burn calories even after you've
+                      left the class!
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/bootcamp.jpg" alt="Bootcamp">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Bootcamp</h4>
+                    <p>This circuit training based class is designed to challenge your body and mind in a fun environment, all the while building strength and fitness through a variety of exercise stations targeting fitness and individual body parts.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/bums-tums.jpg" alt="Bums&Tums">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Bums & Tums</h4>
+                    <p>You cannot beat this class for targeting those “hard to handle” body parts that need a little bit more attention! Tone and firm up your tummy, hips, thighs and bum with this brilliant workout dedicated to ‘bums n tums’!</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/pilates.jpg" alt="Pilates">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Pilates</h4>
+                    <p>This mat pilates class works to balance all muscle groups' strength and flexibility, with an emphasis on challenging the core muscles with each movement. Mat pilates is a challenging yet safe method to sculpt your body and to feel
+                      increased agility in your every day movements.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
-          <div class="gym-class trx-class">
-            <h2 class="general-text text-center">TRX</h2>
-            <p class="general-text overlay">This class will push you to new levels of strength using trx suspension training bands and your own body weight. TRX uses body weight exercises which develops strength, balance, flexibility and core stability simultaneously.</p>
-          </div>
-          <div class="gym-class bodypump-class">
-            <h2 class="general-text text-center">Bodypump</h2>
-            <p class="general-text overlay">Is one of the best ways to tone up and get in shape as it challenges all of your major muscle groups while you squat, press, lift and curl. This is a resistance based workout using bars & weights to burn calories even after you've left the
-              class!
-            </p>
-          </div>
-          <div class="gym-class bootcamp-class">
-            <h2 class="general-text text-center">Bootcamp</h2>
-            <p class="general-text overlay">This circuit training based class is designed to challenge your body and mind in a fun environment, all the while building strength and fitness through a variety of exercise stations targeting fitness and individual body parts.</p>
-          </div>
-          <div class="gym-class bums-tums-class">
-            <h2 class="general-text text-center">Bums & Tums</h2>
-            <p class="general-text overlay">You cannot beat this class for targeting those “hard to handle” body parts that need a little bit more attention! Tone and firm up your tummy, hips, thighs and bum with this brilliant workout dedicated to ‘bums n tums’!</p>
-          </div>
-          <div class="gym-class pilates-class">
-            <h2 class="general-text text-center">Pilates</h2>
-            <p class="general-text overlay">This mat pilates class works to balance all muscle groups' strength and flexibility, with an emphasis on challenging the core muscles with each movement. Mat pilates is a challenging yet safe method to sculpt your body and to feel increased
-              agility in your every day movements.</p>
-          </div>
-        </div>
-
-        <div class="col-md-12 page-section">
-          <h1><a href="#" class="btn btn-primary float uppercase" target="_blank">Check out our Timetables!</a></h1>
+          <br>
+          <h1 class="general-title"><a href="assets/timetables/timetables.pdf" target="_blank">Check out our Timetables!</a></h1>
+          <br>
         </div>
       </div>
     </div>
@@ -225,33 +267,60 @@
           <h1 class="general-title uppercase">Facilities</h1>
         </div>
 
-        <div class="container gym-class-wrap">
-          <div class="gym-class spinning-class">
-            <h2 class="general-text text-center">Spinning</h2>
-            <!--<p class="general-text">Spinning saddle up and experience the most enjoyable and effective workouts ever. Our spinning classes are ideal for people of all levels of fitness and experience, weather you are new to exercise or a regular gym junkie!</p>-->
+        <div class="col-md-6 carousel-center">
+          <div class="row">
+            <div id="carouselIndicators2" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators2" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators2" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators2" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators2" data-slide-to="3"></li>
+                <li data-target="#carouselIndicators2" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="assets/images/weights.jpg" alt="Weights">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Weights Area</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/studio1.jpg" alt="Studio1">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Fitness Studio 1</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/studio2.jpg" alt="Studio2">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Fitness Studio 2</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/pool.png" alt="Swimming Pool">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Swimming Pool</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="assets/images/sauna.jpg" alt="Sauna">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Sauna</h4>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
-          <div class="gym-class trx-class">
-            <h2 class="general-text text-center">TRX</h2>
-            <!--<p class="general-text">This class will push you to new levels of strength using trx suspension training bands and your own body weight. TRX uses body weight exercises which develops strength, balance, flexibility and core stability simultaneously.</p>-->
-          </div>
-          <div class="gym-class bodypump-class">
-            <h2 class="general-text text-center">Bodypump</h2>
-            <!--<p class="general-text">Is one of the best ways to tone up and get in shape as it challenges all of your major muscle groups while you squat, press, lift and curl. This is a resistance based workout using bars & weights to burn calories even after you've left the-->
-            <!--  class!</p>-->
-          </div>
-          <div class="gym-class bootcamp-class">
-            <h2 class="general-text text-center">Bootcamp</h2>
-            <!--<p class="general-text">This circuit training based class is designed to challenge your body and mind in a fun environment, all the while building strength and fitness through a variety of exercise stations targeting fitness and individual body parts.</p>-->
-          </div>
-          <div class="gym-class bums-tums-class">
-            <h2 class="general-text text-center">Bums & Tums</h2>
-            <!--<p class="general-text">You cannot beat this class for targeting those “hard to handle” body parts that need a little bit more attention! Tone and firm up your tummy, hips, thighs and bum with this brilliant workout dedicated to ‘bums n tums’!</p>-->
-          </div>
-          <div class="gym-class pilates-class">
-            <h2 class="general-text text-center">Pilates</h2>
-            <!--<p class="general-text">This mat pilates class works to balance all muscle groups' strength and flexibility, with an emphasis on challenging the core muscles with each movement. Mat pilates is a challenging yet safe method to sculpt your body and to feel increased-->
-            <!--  agility in your every day movements.</p>-->
-          </div>
+          <br>
+          <br>
         </div>
       </div>
     </div>
@@ -283,52 +352,50 @@
             <div class="form-row mb-4">
               <div class="col">
                 <!-- First name -->
-                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+                <input type="text" id="registerFormFirstName" class="form-control" placeholder="First name" required>
               </div>
               <div class="col">
                 <!-- Last name -->
-                <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+                <input type="text" id="registerFormLastName" class="form-control" placeholder="Last name" required>
               </div>
             </div>
 
             <!-- E-mail -->
-            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+            <input type="email" id="registerFormEmail" class="form-control mb-4" placeholder="E-mail" required>
 
             <!-- Password -->
-            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-            <small id="defaultRegisterFormPasswordHelpBlock" class="form-text mb-4">
-              At least 8 characters and 1 digit
+            <input type="password" id="password" class="form-control" placeholder="Password" aria-describedby="passwordHelpBlock" required>
+            <small id="passwordHelpBlock" class="form-text mb-4">
+              At least 8 characters, 1 digit and 1 symbol.
             </small>
-            
 
             <!-- Phone number -->
-            <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-            <small id="defaultRegisterFormPhoneHelpBlock" class="form-text mb-4">
+            <input type="text" id="registerPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="registerFormPhoneHelpBlock">
+            <small id="registerFormPhoneHelpBlock" class="form-text mb-4">
               Optional - for two step authentication
-            </small></br>
+            </small>
 
             <!-- Newsletter -->
             <div class="custom-control custom-checkbox ">
-              <input type="checkbox " class="custom-control-input " id="defaultRegisterFormNewsletter ">
-              <label class="custom-control-label general-text " for="defaultRegisterFormNewsletter ">Subscribe to our newsletter</label>
+              <input type="checkbox" class="custom-control-input" id="registerFormNewsletter">
+              <label class="custom-control-label general-text" for="registerFormNewsletter">Subscribe to our newsletter</label>
             </div>
 
             <!-- Sign up button -->
-            <button class="btn btn-info my-4 btn-block " type="submit ">Sign in</button>
-
+            <button class="btn btn-primary my-4 btn-block" type="submit">Sign Up</button>
             <hr>
 
             <!-- Terms of service -->
             <p class="form-text ">By clicking
               <em>Sign up</em> you agree to our
-              <a href=" " target="_blank ">terms of service</a>
+              <a href="#register-section" class="text-muted">terms of service</a>
 
           </form>
         </div>
       </div>
     </div>
   </section>
-  
+
   <section id="divider-register-section">
     <div class="container-fluid">
       <div class="row content-divider">
@@ -339,9 +406,10 @@
     </div>
   </section>
 
+  <!--This is the Footer-->
 
   <footer class="container-fluid ">
-    <div class="row ">
+    <div class="row footer-top">
       <div class="col-sm-3 footer-item ">
         <h5 class="uppercase footer-sub ">Get in Touch</h5>
         <ul class="list-unstyled footer-text ">
@@ -371,22 +439,22 @@
         <h5 class="uppercase footer-sub ">Quick Links</h5>
         <ul class="list-unstyled footer-text ">
           <li>
-            <a href="# ">About Us</a>
+            <a href="index.html">About Us</a>
           </li>
           <li>
-            <a href="# ">Memberships</a>
+            <a href="#memberships-section">Memberships</a>
           </li>
           <li>
-            <a href="# ">Classes</a>
+            <a href="#classes-section">Classes</a>
           </li>
           <li>
-            <a href="# ">Timetables</a>
+            <a href="assets/timetables/timetables.pdf" target="_blank">Timetables</a>
           </li>
           <li>
-            <a href="# ">Facilities</a>
+            <a href="#facilities-section">Facilities</a>
           </li>
           <li>
-            <a href="# ">Contact Us</a>
+            <a href="#register-section">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -394,26 +462,26 @@
         <h5 class="uppercase footer-sub ">Social</h5>
         <ul class="list-inline social-links ">
           <li class="list-inline-item ">
-            <a target="_blank " href="# ">
-              <i class="fa fa-facebook " aria-hidden="true "></i>
+            <a target="_blank" href="https://www.facebook.com">
+              <i class="fa fa-facebook " aria-hidden="true"></i>
               <span class="sr-only ">Facebook</span>
             </a>
           </li>
           <li class="list-inline-item ">
-            <a target="_blank " href="# ">
-              <i class="fa fa-twitter " aria-hidden="true "></i>
+            <a target="_blank" href="https://twitter.com">
+              <i class="fa fa-twitter " aria-hidden="true"></i>
               <span class="sr-only ">Twitter</span>
             </a>
           </li>
           <li class="list-inline-item ">
-            <a target="_blank " href="# ">
-              <i class="fa fa-instagram " aria-hidden="true "></i>
+            <a target="_blank" href="https://www.instagram.com">
+              <i class="fa fa-instagram " aria-hidden="true"></i>
               <span class="sr-only ">Instagram</span>
             </a>
           </li>
           <li class="list-inline-item ">
-            <a target="_blank " href="# ">
-              <i class="fa fa-youtube " aria-hidden="true "></i>
+            <a target="_blank" href="https://www.youtube.com">
+              <i class="fa fa-youtube " aria-hidden="true"></i>
               <span class="sr-only ">YouTube</span>
             </a>
           </li>
@@ -422,9 +490,9 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous"></script>
 </body>
 
 </html>
